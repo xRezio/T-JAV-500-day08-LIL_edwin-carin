@@ -1,6 +1,7 @@
 package Factory;
 
 public class GiftPaper {
+
     private Toy gift;
 
     public void wrap(Toy toy) {
@@ -8,8 +9,9 @@ public class GiftPaper {
     }
 
     public Toy unwrap() {
-        Toy unwrappedToy = this.gift;
+        Toy toy = this.gift;
         this.gift = null;
-        return unwrappedToy;
+        return toy;
     }
+
 }

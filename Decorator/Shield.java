@@ -1,15 +1,15 @@
 package Decorator;
 
-// Shield class
 public class Shield extends StuffDecorator {
 
-    public Shield(Warrior holder) {
-        super(holder);
-        System.out.println("May this shield protect me against every enemy.");
+    public Shield(Warrior decoratedWarrior) {
+        System.out.println("May this shield protect me against the enemy.");
+        this.decoratedWarrior = decoratedWarrior;
     }
 
     @Override
     public int getHp() {
-        return super.getHp() + 10;
+        return decoratedWarrior.getHp() + 10;
     }
+
 }

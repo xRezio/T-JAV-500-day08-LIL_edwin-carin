@@ -1,6 +1,5 @@
 package Decorator;
 
-// BasicWarrior class
 public class BasicWarrior extends Warrior {
 
     public BasicWarrior() {

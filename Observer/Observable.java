@@ -1,8 +1,9 @@
 package Observer;
 
-import java.util.List;
-
 public interface Observable {
-    void addObserver(Observer observer);
-    boolean notifyObservers();
+
+    public void addObserver(Observer observer);
+
+    public boolean notifyObservers();
+
 }

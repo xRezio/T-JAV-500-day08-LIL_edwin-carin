@@ -1,20 +1,16 @@
 package Decorator;
 
-// StuffDecorator class
-public abstract class StuffDecorator extends Warrior {
-    protected Warrior holder;
+public class StuffDecorator extends Warrior {
 
-    public StuffDecorator(Warrior holder) {
-        this.holder = holder;
-    }
+    protected Warrior decoratedWarrior;
 
     @Override
     public int getHp() {
-        return holder.getHp();
+        return decoratedWarrior.getHp();
     }
 
     @Override
     public int getDmg() {
-        return holder.getDmg();
+        return decoratedWarrior.getDmg();
     }
 }
