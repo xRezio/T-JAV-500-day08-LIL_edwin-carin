@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Elf {
     private Toy toy;
-    private List<GiftPaper> paperList; 
+    private List<GiftPaper> papers; 
     private Factory factory;
 
     public Elf(Factory factory) {
@@ -27,8 +27,8 @@ public class Elf {
         }
     }
 
-    public boolean pickPapers(int nb) {
-        paperList = factory.getPapers(nb);
+    public boolean ers(int nb) {
+        papers = factory.getPapers(nb);
         return true;
     }
 
@@ -38,12 +38,12 @@ public class Elf {
             return null;
         }
 
-        if (paperList == null || paperList.isEmpty()) {
+        if (papers == null || papers.isEmpty()) {
             System.out.println("Wait... I can't pack it with my shirt.");
             return null;
         }
 
-        GiftPaper paper = paperList.remove(0);
+        GiftPaper paper = papers.remove(0);
         paper.wrap(toy);
         toy = null;
         System.out.println("And another kid will be happy!");
