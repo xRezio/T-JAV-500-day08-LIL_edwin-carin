@@ -11,7 +11,4 @@ public abstract class Toy {
     public String getTitle() {
         return title;
     }
-
-
-
 }

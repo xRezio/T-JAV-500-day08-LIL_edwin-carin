@@ -4,14 +4,14 @@ public class GiftPaper {
 
     private Toy gift;
 
-    public void wrap(Toy toy) {
-        this.gift = toy;
+    public void wrap(Toy gift) {
+        this.gift = gift;
     }
 
     public Toy unwrap() {
-        Toy toy = this.gift;
+        Toy gift = this.gift;
         this.gift = null;
-        return toy;
+        return gift;
     }
 
 }

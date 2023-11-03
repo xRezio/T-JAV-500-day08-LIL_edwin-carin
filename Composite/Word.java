@@ -8,8 +8,7 @@ public class Word implements Sentence {
         this.word = word;
     }
 
-    @Override
-    public void print() {
+    public void print(){
         System.out.println(word);
     }
 }
